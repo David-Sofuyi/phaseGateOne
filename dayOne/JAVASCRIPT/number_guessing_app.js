@@ -1,8 +1,31 @@
-console.log("Think of a number between 1 and 100, you have 5 attempts to guess it!")
+const prompt = require("prompt-sync")();
 
-secret_number = Math.random(1,100)
-    const max_attempts = 5
-    const attempts_used = 0
-  
+secretNum = Math.floor(Math.random() * 100 +1 );
 
+count = 0;
 
+while(true){
+    count++;
+    guessNum = Number(prompt("guess a number: "));
+    
+    
+    if(guessNum > 100){
+        console.log("wrong answer!!!");
+    }
+    
+     if(guessNum > secretNum){
+         console.log("higher number");
+     } else if(guessNum < secretNum){
+         console.log("lower number");
+     } else if(secretNum == guessNum){
+         console.log("correct!!!");
+         break;
+     } 
+     
+     if(count == 5) {
+         console.log("maximum tries exceeded");
+         console.log(`${count} no of tries. Secret number is ${secretNum}`)
+         break;
+     }
+}
+ 
