@@ -1,0 +1,2 @@
+for (index = 1; index <= 10; index++)
+    process.stdout.write("Hello World" + "  ")
