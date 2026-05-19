@@ -1,33 +1,43 @@
-public class TaskOne{
-    public static void main(String [] args){
-        
-    }
-public static int getPrime(int [] numbers){
-    int length = int new numbers
-    int [] numbers = {5,9,3,6,3}
-    int [] prime = new int[1]
+import java.util.Arrays;
+import java.util.ArrayList;
 
-        for (int row = count +1; row < count; row++){
-            if(numbers[count]< numbers[smallest]){
-            smallest = row;
-            }    
-        }
-        
-        int temp = numbers[count];
-        numbers [count]= numbers[smallest];
-        numbers [smallest]= temp;
-        
-        int prime = new;
-        if (number[count]%2 != 0){
-        number[count]=numbers[row];
-        }
-        return prime;
-}
-}
-public static int replaceNegative(int [] numbers){
-    for (int count = 0; count < numbers.length; count++){
-        if (numbers[count] < 0){
-            number[count] = 0;
-        }
+public class LevelFive {
+
+    public static void main(String... args) {
+        int[] numbersOne = {5, 9, 3, 6, 2};
+        int[] newNumbersOne = sortArrayOfPrimeNumbers(numbersOne);
+        System.out.println("Before: " + Arrays.toString(numbersOne));
+        System.out.println("After: " + Arrays.toString(newNumbersOne));
+
+        System.out.println();
+        int[] numbersTwo = {5, -9, 3, -6, 2, -11};
+        System.out.println("Before: " + Arrays.toString(numbersTwo));
+        replaceNegativeWithZero(numbersTwo);
+        System.out.println("After: " + Arrays.toString(numbersTwo));
+
+        System.out.println();
+        int[] numbersThree = {45, 60, 3, 0, 67, 2, 45, 3, 22, 0};
+        System.out.println("Before: " + Arrays.toString(numbersThree));
+        int[] duplicateArrays = getDuplicateNumbersInArray(numbersThree);
+        System.out.println("After: " + Arrays.toString(duplicateArrays));
     }
-}
+
+    public static int[] sortArrayOfPrimeNumbers(int[] numbers) {
+        int count = 0;
+
+        for(int number : numbers) {
+            if (isPrime(number))
+                count++;
+        }
+
+        int[] newArray = new int[count];
+        int index = 0;
+
+        for(int number : numbers) {
+            if (isPrime(number))
+                newArray[index++] = number;
+        }
+
+        return newArray;
+    }
+
