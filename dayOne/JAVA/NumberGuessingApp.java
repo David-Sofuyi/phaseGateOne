@@ -3,10 +3,8 @@
     import java.util.Random;
     
     public class NumberGuesser {
-    
 
     public static void main (String [] args){
-     
 
     Scanner inputCollector = new Scanner (System.in);
     
@@ -45,7 +43,6 @@
    else if (userInput > number) {
    System.out.println("Higher than number");
    } 
-   
      
    }
    } 
@@ -53,14 +50,6 @@
     System.out.println("Ohh! wrong");
     System.out.println("Better Luck Next Time");
    
-    
    }
+}
 
-
-
-    
-    }
-    
-    
-    
-    
