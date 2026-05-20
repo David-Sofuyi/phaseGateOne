@@ -5,7 +5,7 @@ const addTwoNumber = function ( number1, number2){
     
 const evenChecker = function (int number){
         if(number % 2 == 0);
-        System.out.println("number is even");
+        console.log("number is even");
     }
     
 const numberSquareChecker = function (int number){
@@ -53,14 +53,14 @@ const reverseNumberChecker = function (int number){
 
 }
     
-const main (){
-addTwoNumber(11, 22)
-evenChecker(20)
-numberSquareChecker(11)
-temperatureConverter(38)
-primeChecker(101)
-largestNumberChecker(14,13,11)
-simpleInterestCalculator(5000, 10, 2)
-areaOfRectangle(14, 7)
-reverseNumberChecker(1234)
-}
+// const main (){
+// addTwoNumber(11, 22)
+// evenChecker(20)
+// numberSquareChecker(11)
+// temperatureConverter(38)
+// primeChecker(101)
+// largestNumberChecker(14,13,11)
+// simpleInterestCalculator(5000, 10, 2)
+// areaOfRectangle(14, 7)
+// reverseNumberChecker(1234)
+// }

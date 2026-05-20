@@ -1,0 +1,33 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class FaceBookLikeSystemAppTest{
+    
+    @Test
+    public void testThatNoOneLikesThis(){
+        String [] name = ;
+        String [] expected = "no one likes this";
+    
+    @Test
+    public void testThatPeterLikesThis(){
+        String [] name = "Peter";
+        String [] expected = "Peter likes this";
+        
+    }
+    @Test
+    public void testThatJacobandAlexLikesThis(){
+        String [] name = "Jacob, Alex";
+        String [] expected = "Jacob and Alex likes this";
+        
+    }
+    @Test
+    public void testThatJacobandAlexLikesThis(){
+        String [] name = "Max, John Mark";
+        String [] expected = "Max, John and Mark likes this";
+    }
+    @Test
+    public void testThatJacobandAlexLikesThis(){
+        String [] name = "Alex, Jacob, Mark, Max";
+        String [] expected = "Alex, Jacob, Mark and Max likes this"
+    }
+}

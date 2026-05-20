@@ -1,4 +1,3 @@
-import random
 
 def get_rating(attempts):
     """Return rating based on attempts used"""
